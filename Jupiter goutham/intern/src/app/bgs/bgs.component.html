@@ -1,0 +1,29 @@
+ <!-- Two way data binding start from here -->
+
+<div class="container">
+  <h2>Template Driven Registration</h2>
+  <form (ngSubmit)="registrationSubmit()" #registrationForm="ngForm">
+    <div>
+      <label>Name:</label>
+      <input type="text" [(ngModel)]="user.name" name="name" required />
+    </div>
+    <br><br>
+    <div>
+      <label>Email:</label>
+      <input type="email" [(ngModel)]="user.email" name="email" required />
+    </div>
+    <br><br>
+    <div>
+      <label>Password:</label>
+      <input type="password" [(ngModel)]="user.password" name="password" required />
+    </div>
+    <br><br>
+    <div>
+      <label>Address:</label>
+      <input type="text" [(ngModel)]="user.address" name="address" required />
+    </div>
+    <br><br>
+    <button type="submit" [disabled]="!registrationForm.form.valid">Register</button>
+  </form>
+</div>
+<!-- Form ends here -->

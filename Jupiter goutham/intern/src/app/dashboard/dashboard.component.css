@@ -1,0 +1,67 @@
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+    height: 100%;
+    position: fixed;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li:hover {
+    background-color: #444;
+}
+
+/* Main content area */
+.main-content {
+    margin-left: 200px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Top navigation bar */
+.topbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+.topbar span {
+    margin-right: 20px;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.topbar a:hover {
+    text-decoration: underline;
+}
+
+

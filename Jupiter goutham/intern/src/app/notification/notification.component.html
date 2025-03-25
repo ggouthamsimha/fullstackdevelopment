@@ -1,0 +1,5 @@
+<p *ngIf="username">Welcome, {{ username }}!</p>
+<p *ngIf="!username">please enter your user name.</p>
+<ul>
+    <li *ngFor="let user of usernames">{{ user }}</li>
+</ul>
